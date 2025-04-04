@@ -36,7 +36,7 @@ var anError = function(message,dontShowExample){
     console.log(message)
     if(!dontShowExample){
         console.log('Example of usage :')
-        console.log('node tools/modifyConfigurationForPlugin.js tensorflow key=1234asdfg port=8080')
+        console.log('node tools/modifyConfigurationForPlugin.js tensorflow key=1234asdfg port=2121')
     }
 }
 var testValueForObject = function(jsonString){

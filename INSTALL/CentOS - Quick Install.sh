@@ -264,7 +264,7 @@ echo "========================================================="
 read -p "Automatically create firewall rules? Y/N " createfirewallrules
 
 if [ "${createfirewallrules^}" = "Y" ]; then
-    sudo firewall-cmd --permanent --add-port=8080/tcp -q
+    sudo firewall-cmd --permanent --add-port=2121/tcp -q
     sudo firewall-cmd --reload -q
 fi
 
@@ -316,7 +316,7 @@ echo "||=============== Installation Complete ===============||"
 echo "========================================================="
 echo "|| Login with the Superuser and create a new user!!    ||"
 echo "========================================================="
-echo "|| Open http://${ipaddress// /}:8080/super in your browser. ||"
+echo "|| Open http://${ipaddress// /}:2121/super in your browser. ||"
 echo "========================================================="
 if [ "${createSuperJson^}" = "Y" ]; then
     echo "|| Default Superuser : admin@shinobi.video             ||"

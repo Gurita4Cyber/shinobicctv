@@ -66,7 +66,7 @@ RUN apt-get upgrade -y
 VOLUME ["/home/Shinobi"]
 VOLUME ["/var/lib/mysql"]
 
-EXPOSE 8080 443 21 25
+EXPOSE 2121 443 21 25
 
 ENTRYPOINT ["/home/Shinobi/Docker/init.sh"]
 

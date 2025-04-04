@@ -97,8 +97,8 @@ chmod +x INSTALL/shinobi
 ln -s INSTALL/shinobi /usr/bin/shinobi
 
 echo "========================================================="
-echo "Creating firewall rule for port 8080"
-sudo firewall-cmd --permanent --add-port=8080/tcp -q
+echo "Creating firewall rule for port 2121"
+sudo firewall-cmd --permanent --add-port=2121/tcp -q
 sudo firewall-cmd --reload -q
 echo "Enabling Superuser"
 sudo cp super.sample.json super.json
@@ -124,7 +124,7 @@ echo "||=============== Installation Complete ===============||"
 echo "========================================================="
 echo "|| Login with the Superuser and create a new user!!    ||"
 echo "========================================================="
-echo "|| Open http://${ipaddress// /}:8080/super in your browser. ||"
+echo "|| Open http://${ipaddress// /}:2121/super in your browser. ||"
 echo "========================================================="
 echo "|| Default Superuser : admin@shinobi.video             ||"
 echo "|| Default Password : admin                            ||"

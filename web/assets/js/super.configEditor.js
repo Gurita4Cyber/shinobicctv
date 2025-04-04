@@ -16,7 +16,7 @@ $(document).ready(function () {
       "port": {
         "title": lang["Server port"],
         "type": "integer",
-        "default": 8080
+        "default": 2121
       },
       "passwordType": {
         "title": lang["Password type"],

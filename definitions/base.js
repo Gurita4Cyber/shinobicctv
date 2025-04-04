@@ -3812,7 +3812,7 @@ module.exports = function(s,config,lang){
                        "field": lang['Custom Base URL'],
                        "description": "",
                        "default": "",
-                       "example": "http://111.111.111.111:8080",
+                       "example": "http://111.111.111.111:2121",
                        "form-group-class": "h_c_input h_c_1",
                        "possible": ""
                     },
@@ -6654,7 +6654,7 @@ module.exports = function(s,config,lang){
                          "name": "port",
                          "field": lang['Port'],
                          "description": lang.separateByCommasOrRange,
-                         "example": "80,7575,8000,8080,8081",
+                         "example": "80,7575,8000,2121,8081",
                       },
                       {
                          "name": "user",
@@ -9297,7 +9297,7 @@ module.exports = function(s,config,lang){
                        {
                            "name": "host",
                            "field": lang["Host"],
-                           "placeholder": "http://shinobi_host:8080",
+                           "placeholder": "http://shinobi_host:2121",
                        },
                        {
                            "name": "groupKey",
