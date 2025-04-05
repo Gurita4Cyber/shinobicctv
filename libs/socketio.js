@@ -63,7 +63,7 @@ module.exports = function(s,config,lang,io){
     const streamConnectionAuthentication = (options,ipAddress) => {
         return new Promise( (resolve,reject) => {
             var isInternal = false
-            if(ipAddress.indexOf('localhost') > -1 || ipAddress.indexOf('127.0.0.1') > -1){
+            if(ipAddress.indexOf('localhost') > -1 || ipAddress.indexOf('192.168.1.9') > -1){
                 isInternal = true
             }
             const baseWheres = [
@@ -299,7 +299,7 @@ module.exports = function(s,config,lang,io){
         cn.on('f',function(d){
             if(!cn.ke&&d.f==='init'){//socket login
                 const ipAddress = cn.request.connection.remoteAddress
-                cn.ip = (ipAddress.indexOf('127.0.0.1') > -1 || ipAddress.indexOf('localhost') > -1) && d.ipAddress ?  d.ipAddress : ipAddress;
+                cn.ip = (ipAddress.indexOf('192.168.1.9') > -1 || ipAddress.indexOf('localhost') > -1) && d.ipAddress ?  d.ipAddress : ipAddress;
                 tx=function(z){if(!z.ke){z.ke=cn.ke;};cn.emit('f',z);}
                 const onFail = (msg) => {
                     tx({ok:false,msg:'Not Authorized',token_used:d.auth,ke:d.ke});cn.disconnect();

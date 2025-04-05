@@ -22,7 +22,7 @@ module.exports = (s,config) => {
     app.post('/mgmt/connect', async function (req,res){
         // form.managementServer
         // Example of Shinobi and MGMT on same server
-        // ws://127.0.0.1:8663
+        // ws://192.168.1.9:8663
         const response = {ok: true};
         if(!config.managementServer){
             const managementServer = s.getPostData(req,'managementServer');

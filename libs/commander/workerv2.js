@@ -7,7 +7,7 @@ const activeTerminalCommands = {}
 let config = workerData.config
 let lang = workerData.lang
 let sslInfo = config.ssl || {}
-let remoteConnectionPort = config.easyRemotePort || (sslInfo && sslInfo.port && (sslInfo.enabled !== false) ? sslInfo.port : config.port || 2121)
+let remoteConnectionPort = config.easyRemotePort || (sslInfo && sslInfo.port && (sslInfo.enabled !== false) ? sslInfo.port : config.port || 3306)
 const multipleSelected = config.p2pHostMultiSelected instanceof Array && config.p2pHostMultiSelected.length > 0;
 const p2pApiKey = config.p2pApiKey;
 const p2pServerList = config.p2pServerList;

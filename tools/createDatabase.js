@@ -15,7 +15,7 @@ async function createDatabase(){
             knex: {
                 client: config.databaseType || 'mysql2',
                 connection: {
-                    host: config.db.host || '127.0.0.1',
+                    host: config.db.host || '192.168.1.9',
                     user: config.db.user || 'majesticflame',
                     password: config.db.password || '',
                     port: config.db.port,

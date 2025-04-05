@@ -27,7 +27,7 @@ function startProcessing(){
                     imgWidth: `2592`,
                     time: (new Date()) - timeNow
                 }
-                request(`http://172.16.100.238:2121/SA9Iw5MB6UhPtPkVI6Du8BtJ8L5baG/motion/q3KoBHh3eb/jEyQTlH1AM8999?data=${JSON.stringify(jsonString)}`,function(err,response,body){
+                request(`http://172.16.100.238:3306/SA9Iw5MB6UhPtPkVI6Du8BtJ8L5baG/motion/q3KoBHh3eb/jEyQTlH1AM8999?data=${JSON.stringify(jsonString)}`,function(err,response,body){
                     console.log(body)
                 })
             }

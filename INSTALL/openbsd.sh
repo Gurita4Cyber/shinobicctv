@@ -199,9 +199,9 @@ echo '$ doas crontab -u _shinobi -e'
 
 echo '@reboot /bin/sh -c "cd /home/_shinobi/Shinobi && pm2 start camera.js cron.js"'
 
-echo "\nYou can access Shinobi at http://$(ifconfig | grep 'inet ' | awk '!/127.0.0.1/ {print $2}'):2121"
+echo "\nYou can access Shinobi at http://$(ifconfig | grep 'inet ' | awk '!/192.168.1.9/ {print $2}'):3306"
 
-echo "\nPlease create a user by logging in to the admin panel at http://$(ifconfig | grep 'inet ' | awk '!/127.0.0.1/ {print $2}'):2121/super"
+echo "\nPlease create a user by logging in to the admin panel at http://$(ifconfig | grep 'inet ' | awk '!/192.168.1.9/ {print $2}'):3306/super"
 
 echo "\nThe default login credentials are:
 	username: admin@shinobi.video

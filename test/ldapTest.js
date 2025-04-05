@@ -3,7 +3,7 @@
 // async function runTest(){
 //     try{
 //         let authenticated = await authenticate({
-//           ldapOpts: { url: 'ldap://127.0.0.1:389' },
+//           ldapOpts: { url: 'ldap://192.168.1.9:389' },
 //           userDn: 'uid=ubuntu,dc=example,dc=com',
 //           userPassword: 'moeiscool',
 //           userSearchBase: 'dc=example,dc=com',
@@ -20,7 +20,7 @@
 
 var LdapAuth = require('ldapauth-fork');
 
-const host = 'ldap://127.0.0.1:389'
+const host = 'ldap://192.168.1.9:389'
 const username = 'ubuntu2'
 const password = 'moeiscool'
 const bindDN = 'uid=ubuntu2,ou=People,dc=example,dc=com'

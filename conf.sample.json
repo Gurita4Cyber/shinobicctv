@@ -1,5 +1,5 @@
 {
-  "port": 2121,
+  "port": 3306,
   "debugLog": false,
   "enableFaceManager": false,
   "videosDir": "__DIR__/videos",
@@ -14,7 +14,7 @@
       {"name":"second","path":"__DIR__/videos2"}
   ],
   "db": {
-    "host": "127.0.0.1",
+    "host": "192.168.1.9",
     "user": "majesticflame",
     "password": "",
     "database": "ccio",

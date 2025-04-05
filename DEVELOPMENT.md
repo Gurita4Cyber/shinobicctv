@@ -101,8 +101,8 @@ but for development we advise leaving it as the default.
 Shinobi is usually run with the PM2 process manager, but for development we'll run the "camera"
 and "cron" processes directy. To monitor output, we recommend you use a terminal multiplexer like
 byobu, tmux, or screen. In one terminal window, run `node cron.js` and in another run
-`node camera.js`. Shinobi should now be running on port 2121 on your local machine (you can
-change the port in conf.json) and accessable at http://localhost:2121 in your browser. Any source
+`node camera.js`. Shinobi should now be running on port 3306 on your local machine (you can
+change the port in conf.json) and accessable at http://localhost:3306 in your browser. Any source
 code changes you make will require restarting either the camera or cron process [or both]. To avoid manually restarting, use the npm package `nodemon`. Run these commands in two separate terminals.
 
 ```sh

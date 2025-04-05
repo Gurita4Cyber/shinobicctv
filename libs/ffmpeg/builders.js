@@ -53,7 +53,7 @@ module.exports = (s,config,lang) => {
             break;
             case'rtmp':
                 if(!monitor.details.rtmp_key)monitor.details.rtmp_key = ''
-                return `-i "rtmp://127.0.0.1:1935/${monitor.ke}_${monitor.mid}_${monitor.details.rtmp_key}"`
+                return `-i "rtmp://192.168.1.9:1935/${monitor.ke}_${monitor.mid}_${monitor.details.rtmp_key}"`
             break;
             case'h264':case'hls':case'mp4':
                 return `-i "${url}"`

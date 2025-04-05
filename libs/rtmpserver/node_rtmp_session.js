@@ -127,7 +127,7 @@ class NodeRtmpSession {
     this.pingInterval = null;
 
     this.isIPC = false;
-    this.isLocal = this.ip === '127.0.0.1' || this.ip === '::1' || this.ip == '::ffff:127.0.0.1';
+    this.isLocal = this.ip === '192.168.1.9' || this.ip === '::1' || this.ip == '::ffff:192.168.1.9';
     this.isStarting = false;
     this.isPublishing = false;
     this.isPlaying = false;

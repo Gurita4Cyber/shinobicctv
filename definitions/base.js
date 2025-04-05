@@ -3812,7 +3812,7 @@ module.exports = function(s,config,lang){
                        "field": lang['Custom Base URL'],
                        "description": "",
                        "default": "",
-                       "example": "http://111.111.111.111:2121",
+                       "example": "http://111.111.111.111:3306",
                        "form-group-class": "h_c_input h_c_1",
                        "possible": ""
                     },
@@ -5858,7 +5858,7 @@ module.exports = function(s,config,lang){
                        "name": "ldap_url",
                        "field": lang.URL,
                        "description": "",
-                       "example": "ldap://127.0.0.1:389",
+                       "example": "ldap://192.168.1.9:389",
                        "possible": ""
                     },
                     {
@@ -6654,7 +6654,7 @@ module.exports = function(s,config,lang){
                          "name": "port",
                          "field": lang['Port'],
                          "description": lang.separateByCommasOrRange,
-                         "example": "80,7575,8000,2121,8081",
+                         "example": "80,7575,8000,3306,8081",
                       },
                       {
                          "name": "user",
@@ -9297,7 +9297,7 @@ module.exports = function(s,config,lang){
                        {
                            "name": "host",
                            "field": lang["Host"],
-                           "placeholder": "http://shinobi_host:2121",
+                           "placeholder": "http://shinobi_host:3306",
                        },
                        {
                            "name": "groupKey",

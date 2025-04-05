@@ -69,7 +69,7 @@ module.exports = (s,config,lang) => {
             ip = addressRange.join(',')
         }
         if(ports === ''){
-            ports = '80,2121,8000,7575,8081,9080,8090,8999,8899'
+            ports = '80,3306,8000,7575,8081,9080,8090,8999,8899'
         }
         if(ports.indexOf('-') > -1){
             ports = ports.split('-')

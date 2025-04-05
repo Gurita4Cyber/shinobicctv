@@ -156,7 +156,7 @@ if [ ! -e "./conf.json" ]; then
 fi
 if [ ! -e "./super.json" ]; then
     getip=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
-    echo "Admin panel default url: http://$getip:2121/super"
+    echo "Admin panel default url: http://$getip:3306/super"
     echo "Default Superuser : admin@shinobi.video"
     echo "Default Password : admin"
     cp super.sample.json super.json

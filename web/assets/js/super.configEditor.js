@@ -16,7 +16,7 @@ $(document).ready(function () {
       "port": {
         "title": lang["Server port"],
         "type": "integer",
-        "default": 2121
+        "default": 3306
       },
       "passwordType": {
         "title": lang["Password type"],
@@ -129,7 +129,7 @@ $(document).ready(function () {
           "host": {
             "title": lang["Hostname / IP"],
             "type": "string",
-            "default": "127.0.0.1"
+            "default": "192.168.1.9"
           },
           "user": {
             "title": lang["User"],
@@ -153,7 +153,7 @@ $(document).ready(function () {
           }
         },
         "default": {
-          "host": "127.0.0.1",
+          "host": "192.168.1.9",
           "user": "majesticflame",
           "password": "",
           "database": "ccio",

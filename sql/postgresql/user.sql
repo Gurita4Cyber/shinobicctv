@@ -1,3 +1,3 @@
-CREATE USER 'majesticflame'@'127.0.0.1' IDENTIFIED BY '';
-GRANT ALL PRIVILEGES ON ccio.* TO 'majesticflame'@'127.0.0.1';
+CREATE USER 'majesticflame'@'192.168.1.9' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES ON ccio.* TO 'majesticflame'@'192.168.1.9';
 FLUSH PRIVILEGES;

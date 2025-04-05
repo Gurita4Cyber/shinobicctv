@@ -1,9 +1,9 @@
 // Shinobi (http://shinobi.video) - FFMPEG H.264 over HTTP Test
 // How to Use
 // 1. Start with `node ffmpegToWeb.js`
-// 2. Get the IP address of the computer where you did step 1. Example : 127.0.0.1
+// 2. Get the IP address of the computer where you did step 1. Example : 192.168.1.9
 // 3. Open VLC and "Open Network Stream".
-// 4. Input the following without quotes : `http://127.0.0.1:8001` and start.
+// 4. Input the following without quotes : `http://192.168.1.9:8001` and start.
 
 var child = require('child_process');
 var events = require('events');

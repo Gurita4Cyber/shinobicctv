@@ -191,7 +191,7 @@ if [ "${mysqlDefaultData^}" = "Y" ]; then
 
 		#If the hostname is left blank, use localhost
 		if [ "$sqlhost" = "" ]; then
-			sqlhost=127.0.0.1
+			sqlhost=192.168.1.9
 		fi
 
 		#Loop until able to connect to the database
@@ -221,7 +221,7 @@ if [ "${mysqlDefaultData^}" = "Y" ]; then
 
 			#If the hostname is left blank, use localhost
 			if [ "$sqlhost" = "" ]; then
-				sqlhost=127.0.0.1
+				sqlhost=192.168.1.9
 			fi
 		done
 	else
@@ -230,7 +230,7 @@ if [ "${mysqlDefaultData^}" = "Y" ]; then
 			read -p "Please enter your MariaDB username: " sqluser
 			read -sp "Please enter your MariaDB password: " sqlpass
 			echo ""
-			sqlhost=127.0.0.1
+			sqlhost=192.168.1.9
 			sqlport=3306
 		done
 	fi
@@ -264,7 +264,7 @@ echo "========================================================="
 read -p "Automatically create firewall rules? Y/N " createfirewallrules
 
 if [ "${createfirewallrules^}" = "Y" ]; then
-    sudo firewall-cmd --permanent --add-port=2121/tcp -q
+    sudo firewall-cmd --permanent --add-port=3306/tcp -q
     sudo firewall-cmd --reload -q
 fi
 
@@ -316,7 +316,7 @@ echo "||=============== Installation Complete ===============||"
 echo "========================================================="
 echo "|| Login with the Superuser and create a new user!!    ||"
 echo "========================================================="
-echo "|| Open http://${ipaddress// /}:2121/super in your browser. ||"
+echo "|| Open http://${ipaddress// /}:3306/super in your browser. ||"
 echo "========================================================="
 if [ "${createSuperJson^}" = "Y" ]; then
     echo "|| Default Superuser : admin@shinobi.video             ||"
